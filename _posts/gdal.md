@@ -1,3 +1,14 @@
+---
+layout:     post
+title:      "GDAL 学习记录"
+subtitle:   "GDAL 学习记录"
+date:        2019年11月28日
+author:     "cpuRick"
+header-img: "img/post-bg-2015.jpg"
+tags:
+    - GDAL
+---
+
 # GDAL 学习记录
 
 ###链接
