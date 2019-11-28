@@ -13,7 +13,7 @@ future: true
 
 # SNS settings
 RSS: false
-weibo_username:     cpuRick
+weibo_username:     cpuRick2019
 zhihu_username:     cpuRick
 github_username:    hexiaoliangRick
 twitter_username:   cpuRick
@@ -79,7 +79,7 @@ ga_domain:
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "think coding dance interesting things<br>珍惜每一天"
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avator-xioabei.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
