@@ -53,10 +53,32 @@ tags:
         3.  查看编译结果 ：/swig/java目录下为编译的结果   
         
         
-#### vs2015 win10 gdal 3.0.2 手动编译
+#### vs2015 win10 gdal 3.0.2 编译过程
+参考地址：https://blog.csdn.net/weixin_42141589/article/details/94357199  
+1.编译sqllite  
+
+2.编译proi
+  
+3.编译gdal
+  
+4.编译gdal.jar
+  
 
 
-#### OSGeo4w 简介和使用方法
+
+#### OSGeo4w 简介和使用方法  
+1.是什么  
+**官方网站**:https://www.osgeo.org/projects/osgeo4w/  
+个人理解，类似前端的npm还有yarn ,OSGeo4w 就是一个包（软件管理工具），其使用方法和**MinGwin**差不多，都可以用来更替一些软件。
+2.可以干什么  
+安装gdal/qgis/pr4j等软件包
+3.怎么做  
+- 如果要安装软件，在官网下载windows平台下的安装包
+- 运行该installer  
+  ![安装软件](../img/gis/osgeo4w/installer.png) 
+- 选择advance install 
+![安装软件](../img/gis/osgeo4w/advanceinstall.png)
+- 然后一步，一步，选择自己想要安装的软件  
  
 
 #### 引入gdal 问题   
