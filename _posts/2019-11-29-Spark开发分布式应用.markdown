@@ -51,5 +51,51 @@ tags:
  **原因**
  数据不一致，删除集群环境下，dfs数据存储的位置。
  集群的启动、关闭要通过脚本执行，不能强制杀死进程。
+ ##### 分布式集群搭建
+  配置和单机基本相同，主要修改以下几点
+  - 配置/etc/hosts文件，使集群之间能够互相ping通   
+      `127.0.0.1   localhost  
+      
+       172.18.0.2  cluster-master
+         
+       172.18.0.3  cluster-slave1
+       
+       172.18.0.4  cluster-slave2
+       
+       172.18.0.5  cluster-slave3`
+   
+  - /etc/workers 文件配置集群
+  - /opt/hadoop/etc/hadoop/hdfs-site.xml中集群数量的配置   
+  ![集群-数量](../img/gis/spark/集群-数量.png)
+  - 配置各主机间能够免密登陆
+  - 修改~/.bashrc 文件，增加HADOOP_HOME 和JAVA_HOME的环境变量
+          ```
+        # User specific aliases and functions
+        
+        alias rm='rm -i'
+        alias cp='cp -i'
+        alias mv='mv -i'
+        
+        # Source global definitions
+        if [ -f /etc/bashrc ]; then
+                . /etc/bashrc
+        fi
+        :>/etc/hosts
+        cat >>/etc/hosts<<EOF
+        127.0.0.1   localhost
+        172.18.0.2  cluster-master
+        172.18.0.3  cluster-slave1
+        172.18.0.4  cluster-slave2
+        172.18.0.5  cluster-slave3
+        EOF
+        # hadoop
+        export HADOOP_HOME=/opt/hadoop-3.1.2
+        export PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
+        
+        #java
+        export JAVA_HOME=/opt/jdk1.8.0_221
+        export PATH=$JAVA_HOME/bin:$PATH
+        ```
+  
  
 ####知识总结
