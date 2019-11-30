@@ -1,4 +1,13 @@
-
+---  
+layout:     post  
+title:      "Spark学习记录"  
+subtitle:   "Spark学习记录"  
+date:       2019-11-29 12:00:00 
+author:     "cpuRick"  
+header-img: "img/post-bg-2015.jpg"  
+tags:  
+    - Spark,大数据  
+---    
 # Spark学习记录
 --------
 ##Docker搭建Hadoop3.0完全分布式集群

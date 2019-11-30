@@ -1,0 +1,13 @@
+---  
+layout:     post  
+title:      "Linux 运维"  
+subtitle:   "Linux 运维"  
+date:       2019-11-29 12:00:00 
+author:     "cpuRick"  
+header-img: "img/post-bg-2015.jpg"  
+tags:  
+    - Linux  
+---    
+
+ 
+#Ansible 操作记录 
