@@ -11,3 +11,11 @@ tags:
 
  
 #Ansible 操作记录 
+
+#常见其他操作
+- 查看端口占用  netstat -ntulp | grep 3306   
+- ifconfig/netstat 等命令找不到   yum -y install net-tools
+- Vmware Centos7 虚拟机扩展硬盘存储: https://blog.csdn.net/danielzhou888/article/details/80212431
+- Hadoop 集群namenode 格式化：hadoop namenode -format
+- Hadoop 集群创建目录  bin/hdfs dfs -mkdir input
+- Hadoop 集群上传文件： bin/hdfs dfs -put etc/hadoop/*.xml input
