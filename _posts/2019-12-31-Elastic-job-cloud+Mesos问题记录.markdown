@@ -72,7 +72,26 @@ nohup ./bin/mesos-agent.sh --master=127.0.0.1:5050 --work_dir=/var/lib/mesos/sla
 
 # Elastic-job-cloud
 ## Elastic-job-cloud 简介
+elastic-job 是当当网开源的项目，包含elastic-job-lite和elastic-job-cloud两个子项目，分别适用于单机环境和云化环境下，
+二者采用统一的编程接口，一次开发，可在不修改代码的情况下由lite迁移到cloud中。    
+elastic-job 定位为**分布式任务调度框架**，主要用于分布式环境下任务的分片、调度。同类型的框架大致如下：
+- xxx-job:个人开源，轻量级任务调度框架
+- LTS ：阿里员工个人开源项目
+- Scheduler x  2.0 阿里最近开源的任务调度框架
+- saturn 唯品会团队基于 elastic-job 1.0 开发的任务调度框架
+ 
+
+elastic-job-cloud 基于mesos开发，从mesos的角度出发，其就是类似marathon之类的应用框架。
 
 ## Elastic-job-cloud 编译过程、搭建
+- git clone 下载elastic-job的项目源码
+- elastic-job项目采用了Lombok技术开发。在idea中，如果要编译源码，首先要安装 Lombok插件。
+  在笔者编译过程中，分别在子项目顶层文件夹下运行 ```mvn -e compile```或者```mvn -e install```命令，来完成构建。
+
 ## 运行分布式作业 Elastic-job-cloud-example
+在运行作业之前，首先我们要先运行elastic-job-cloud-scheduler 服务
+- 首先修改conf文件夹下的配置文件
+- 然后调用bin文件夹下start.sh 脚本文件
+- 打开 http://localhost:8899/# 链接后，就能看见elastic-job的控制台了。
+
  
