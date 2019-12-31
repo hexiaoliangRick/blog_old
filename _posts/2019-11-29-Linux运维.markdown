@@ -19,3 +19,5 @@ tags:
 - Hadoop 集群namenode 格式化：hadoop namenode -format
 - Hadoop 集群创建目录  bin/hdfs dfs -mkdir input
 - Hadoop 集群上传文件： bin/hdfs dfs -put etc/hadoop/*.xml input
+- sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.7.0_25/bin/javac 300  linux默认版本管理软件  
+- update-alternatives --display java 显示所有的软链版本

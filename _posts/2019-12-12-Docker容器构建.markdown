@@ -1,0 +1,22 @@
+---  
+layout:     post  
+title:      "构建Docker镜像"  
+subtitle:   "Docker镜像"  
+date:       2019-12-12 12:00:00 
+author:     "cpuRick"  
+header-img: "img/post-bg-2015.jpg"  
+tags:  
+    - GDAL  
+---    
+  
+
+#  构建Docker镜像
+
+##问题：
+- ### springboot 的项目，需要部署在docker中，所以需要构建自己的项目容器，现在将步骤记录如下。
+
+
+- ### docker 使用命令记录
+1. docker run -it _container-id_ bash 
+2. docker run -p 9870:9870  -v /usr/temp:/usr/local/temp  _container-id_ 
+3. 
